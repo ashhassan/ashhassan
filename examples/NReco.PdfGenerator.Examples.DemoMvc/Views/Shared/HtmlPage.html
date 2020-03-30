@@ -1,0 +1,1039 @@
+﻿<html>
+
+<head>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pages {
+            width: 1000px;
+            height: 1800px;
+            margin: 0px auto;
+            position: relative;
+            <!-- background-color: white; -->
+            background-image: none;
+        }
+
+        #page1 {
+            background-image: url('epyc-cypher-texture.jpg');
+            background-size: cover;
+        }
+
+        sup {
+            font-size: 12px;
+            position: relative;
+            top: 1px;
+        }
+
+        #main-header {
+            position: absolute;
+            top: 242px;
+            left: 52px;
+            color: white;
+            font-size: 63px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #textUnderHeader {
+            font-size: 31px;
+            line-height: 1.8;
+            text-align: center;
+            position: absolute;
+            top: 466px;
+            left: 279px;
+            color: white;
+        }
+
+        #firstPageDisclaimer {
+            position: absolute;
+            top: 740px;
+            color: white;
+            font-size: 10px;
+            text-align: center;
+            left: 82px;
+            width: 652px;
+        }
+
+        .disclaimer {
+            font-size: 13px;
+            width: 700px;
+            position: relative;
+            left: 59px;
+            top: 50px;
+        }
+
+        #copyright {
+            text-align: center;
+            font-size: 11px;
+            bottom: 111px;
+            left: 185px;
+            color: white;
+            position: absolute;
+        }
+
+        #logo {
+            position: relative;
+            top: 20px;
+            left: 12px;
+        }
+
+        #leftData {
+            position: absolute;
+            top: 98px;
+            width: 484px;
+            font-size: 15px;
+            left: 48px;
+            float: left;
+        }
+
+        #rightData {
+            float: right;
+            float: right;
+            position: absolute;
+            right: 50px;
+            top: 125px;
+        }
+
+        .textHeading {
+            font-size: 19px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        #executive-summary {
+            font-size: 27px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        #valueinDollar {
+            margin: 0;
+            font-size: 31px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #textUnderValue {
+            margin: 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #headingOfChart {
+            color: #026988;
+            position: absolute;
+            text-align: center;
+            font-size: 19px;
+            top: 507px;
+            font-weight: bold;
+            left: 21px;
+        }
+
+        .svg-container {
+            position: relative;
+            width: 850px;
+            top: 69px;
+            height: 380px;
+        }
+
+        .tables {
+            line-height: 1.5;
+            font-size: 11px;
+            font-weight: bold;
+            border-spacing: inherit;
+            text-align: left;
+            padding: 27px;
+        }
+
+        .tables {
+            width: 814px;
+            text-align: left;
+        }
+
+        #table3 tr:nth-child(6) td:nth-last-child(1),
+        #table3 td:nth-last-child(2) {
+            text-align: center;
+        }
+
+        #table3 tr:nth-last-child(1),
+        #table3 tr:nth-last-child(2) {
+            background-color: #005368;
+            color: white;
+        }
+
+        .tables th {
+            background-color: #a9a9a9;
+        }
+
+        #table3 tr td,
+        #table3 th {
+            border: 1px solid #dee2e6;
+            padding: 4px;
+        }
+
+        .tables tr td,
+        .tables th {
+            border: 1px solid #dee2e6;
+            padding: 6px;
+        }
+
+        .tableHeading {
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+            color: #026988;
+            font-size: 19px;
+            top: 22px;
+        }
+
+        #table10 {
+            position: relative;
+            top: -35px;
+        }
+
+        #table9 {
+            position: relative;
+            top: -18px;
+        }
+
+        #table9Heading {
+            top: 9px;
+        }
+
+        #table8 {
+            position: relative;
+            top: -17px;
+        }
+
+        #table8Heading {
+            top: 14px;
+        }
+
+        #table10Heading {
+            top: -10px;
+        }
+
+        #step2Placeholder {
+            position: relative;
+            top: -30px;
+        }
+
+        .placeholder {
+            line-height: 0.2;
+            top: 23px;
+            position: relative;
+            font-style: italic;
+            left: 35px;
+            padding-bottom: 10px;
+        }
+
+            .placeholder p:first-child {
+                font-size: 17px;
+                letter-spacing: 0.5;
+            }
+
+            .placeholder p:nth-child(2) {
+                font-size: 15px;
+                letter-spacing: 0.4;
+            }
+
+            .placeholder p:nth-child(3) {
+                font-size: 14px;
+            }
+
+        #aboutAMD {
+            position: relative;
+            top: 51px;
+            left: 59px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pages" id="page1">
+        <p id="main-header">AMD EPYC Comparison <br>Tool</p>
+        <p id="textUnderHeader">
+            Report prepared for<br>
+            Aug 12 test<br>
+            August 21, 2020
+        </p>
+        <div class="disclaimer" id="firstPageDisclaimer">
+            <p>
+                DISCLAIMER: NOTICE - THIS INFORMATION IS PROVIDED TO YOU AS A TOOL 'AS IS' WITH THE
+                UNDERSTANDING THAT THERE ARE NO
+                REPRESENTATIONS OR WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. AMD AND ALINEAN DISCLAIM ALL
+                WARRANTIES
+                INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+                PURPOSE.
+                NEITHER
+                AMD NOR ALINEAN WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE, VALIDITY, ACCURACY OR RELIABILITY
+                OF
+                THE
+                TOOL OR THE RESULTS OF THE USE OF THE TOOL. IN NO EVENT SHALL AMD OR ALINEAN BE LIABLE FOR ANY DAMAGES,
+                INCLUDING
+                THOSE ARISING AS A RESULT OF ALINEAN'S NEGLIGENCE, WHETHER THOSE DAMAGES ARE DIRECT, CONSEQUENTIAL,
+                INCIDENTAL,
+                OR SPECIAL, FLOWING FROM YOUR USE OF OR INABILITY TO USE THE TOOL OR INFORMATION PROVIDED HEREWITH OR
+                RESULTS OF
+                THE TOOL'S USE EVEN IF AMD OR ALINEAN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE ULTIMATE
+                RESPONSIBILITY FOR ACHIEVING THE CALCULATED RESULTS REMAINS WITH YOU.<br>
+                THIS ESTIMATOR IS DESIGNED TO SHOW YOU THE SAVING YOU CAN EXPECT BY USING AMD, BUT EVERY SITUATION AND
+                ORGANIZATION IS DIFFERENT AND YOUR ACTUAL SAVINGS MAY VARY.
+            </p>
+        </div>
+        <p id="copyright">Copyright ©-2017 Alinean, Inc. and Advanced Micro Devices, Inc. All rights reserved. V2.6</p>
+    </div>
+
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page2">
+
+        <img id="logo" src='logo.png'>
+
+        <span id="leftData">
+            <p id="executive-summary">Executive Summary</p>
+            <p class="textHeading">Overcome your performance bottlenecks</p>
+            <p class="text">
+                You are being asked to support more applications, and new types of
+                applications which are more compute intensive, however, your IT budgets
+                aren’t necessarily keeping pace with the increasing demand and customer
+                expectations. You have to be sure your infrastructure is as cutting edge and
+                next generation as the applications and services you are implementing on it.
+                According to Aberdeen, Best-in-Class organizations are 25% more likely to
+                update their server infrastructure to meet the demands of current workloads,
+                and are able to reduce overall IT costs at 3x the rate of followers as a result
+                (Aberdeen Group)
+                <br><br>
+                AMD delivers with better VM Density (32 VMs/socket), better memory
+                bandwidth (8 channels/socket), higher memory capacity (4TB) and more
+                cores per rack (5,376 cores/rack).
+            </p>
+            <br>
+            <p class="textHeading">Buy just what you need</p>
+            <p class="text">
+                Many times you are buying two socket servers, as a security blanket for extra
+                capacity. You may be forced to buy two sockets in order to get the IO
+                bandwidth you need. However, most of these servers have only one socket
+                initially populated, and never do wind up having that extra processor
+                populated after all.<br><br>
+                AMD Naples delivers a 1 processor solution, with 8, 16, 24 or 32 cores, all
+                with 8 memory channels, up to 2 TB memory capacity and 128 PCIe lanes.
+            </p>
+            <br>
+            <p class="textHeading">Help protect your data</p>
+            <p class="text">
+                Many security risks are from internal issues not just external t eats. If you
+                are an administrator and have access to the hypervisor, you have access to
+                all the data for all of the VMs. If one of the VMs is compromised from an
+                external attack, your hypervisor and all your VMs are compromised. If you
+                break into one house, you have keys to the entire street.<br><br>
+                AMD Naples is more secure, providing hardware-based security to deliver
+                higher levels of trust and protection for your mission critical server
+                deployments.
+            </p>
+        </span>
+
+        <span id="rightData">
+            <P id="valueinDollar">$196,205</P>
+            <p id="textUnderValue">Reduction in Costs</p>
+        </span>
+
+    </div>
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page3Part1">
+        <img id="logo" src="logo.png">
+
+        <p class="tableHeading" id="table3Heading">VIRTUALIZATION ESTIMATED 3-YEAR TCO Results</p>
+        <table class="tables" id="table3">
+            <tr>
+                <th>Total</th>
+                <th>Intel Xeon</th>
+                <th>AMD EPYC</th>
+                <th>Results</th>
+                <th>Summary</th>
+            </tr>
+            <tr>
+                <td>HW & Virt SW Acq Cost</td>
+                <td>$8799537.60</td>
+                <td>$4662623.70</td>
+                <td>47.01%</td>
+                <td>~$4136913.90 and 47.01% Lower HW & Virt SW Acq Cost with AMD EPYC</td>
+            </tr>
+            <tr>
+                <td>1st year Cost/VM</td>
+                <td>$28187.00</td>
+                <td>$15030.00</td>
+                <td>46.68%</td>
+                <td>~$13157.00 and 46.68% Lower 1st year Cost/VM with AMD EPYC</td>
+            </tr>
+            <tr>
+                <td>3 year Cost/VM</td>
+                <td>$29563.00</td>
+                <td>$15950.00</td>
+                <td>46.05%</td>
+                <td>~$13613.00 and 46.05% Lower 3 year Cost/VM with AMD EPYC</td>
+            </tr>
+            <tr>
+                <td>Real Estate</td>
+                <td>$38880.00</td>
+                <td>$19440.00</td>
+                <td>50.00%</td>
+                <td>~$19440.00 and 50.00% Lower RealEstate Cost with AMD EPYC</td>
+            </tr>
+            <tr>
+                <td>Total Solution Virtualization SW licenses</td>
+                <td>32</td>
+                <td>14</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+            <tr>
+                <td>Virtualization SW License - Cost</td>
+                <td>$64017.60</td>
+                <td>$28007.70</td>
+                <td>56.25%</td>
+                <td>~$36009.90 and 56.25% Lower Virtualization SW Cost with AMD EPYC</td>
+            </tr>
+            <tr>
+                <td>1st Year TCO</td>
+                <td>$9019796.00</td>
+                <td>$4809758.00</td>
+                <td>46.68%</td>
+                <td>~$4210038.00 and 46.68% Lower 1st Year TCO with AMD EPYC</td>
+            </tr>
+            <tr>
+                <td>3 Year TCO</td>
+                <td>$9460314.00</td>
+                <td>$5104027.00</td>
+                <td>46.05%</td>
+                <td>~$4356287.00 and 46.05% Lower 3 Year TCO with AMD EPYC</td>
+            </tr>
+        </table>
+        <p id="headingOfChart">
+            AMD EPYC<sup>TM</sup> Virtualization TCO is estimated approximately $4136913.90 or
+            ~47.01% better than
+            Intel® Xeon®
+        </p>
+        <div class="svg-container" style="position: relative; width: 850px; height: 380px;">
+            <svg class="main-svg"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="850" height="380"
+                 style="background: transparent;">
+                <defs id="defs-c7ff52">
+                    <g class="clips">
+                        <clipPath id="clipc7ff52xyplot" class="plotclip">
+                            <rect width="690" height="300"></rect>
+                        </clipPath>
+                        <clipPath class="axesclip" id="clipc7ff52x">
+                            <rect x="80" y="0" width="690" height="380"></rect>
+                        </clipPath>
+                        <clipPath class="axesclip" id="clipc7ff52y">
+                            <rect x="0" y="0" width="850" height="300"></rect>
+                        </clipPath>
+                        <clipPath class="axesclip" id="clipc7ff52xy">
+                            <rect x="80" y="0" width="690" height="300"></rect>
+                        </clipPath>
+                    </g>
+                    <g class="gradients"></g>
+                </defs>
+                <g class="bglayer"></g>
+                <g class="draglayer">
+                    <g class="xy"></g>
+                </g>
+                <g class="layer-below">
+                    <g class="imagelayer"></g>
+                    <g class="shapelayer"></g>
+                </g>
+                <g class="cartesianlayer">
+                    <g class="subplot xy">
+                        <g class="layer-subplot">
+                            <g class="shapelayer"></g>
+                            <g class="imagelayer"></g>
+                        </g>
+                        <g class="gridlayer">
+                            <g class="x"></g>
+                            <g class="y">
+                                <path class="ygrid crisp" transform="translate(0,235.22)" d="M80,0h690"
+                                      style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                <path class="ygrid crisp" transform="translate(0,170.45)" d="M80,0h690"
+                                      style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                <path class="ygrid crisp" transform="translate(0,105.67)" d="M80,0h690"
+                                      style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                                <path class="ygrid crisp" transform="translate(0,40.89)" d="M80,0h690"
+                                      style="stroke: rgb(238, 238, 238); stroke-opacity: 1; stroke-width: 1px;"></path>
+                            </g>
+                        </g>
+                        <g class="zerolinelayer">
+                            <path class="yzl zl crisp" transform="translate(0,300)" d="M80,0h690"
+                                  style="stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 1px;"></path>
+                        </g>
+                        <path class="xlines-below"></path>
+                        <path class="ylines-below"></path>
+                        <g class="overlines-below"></g>
+                        <g class="xaxislayer-below"></g>
+                        <g class="yaxislayer-below"></g>
+                        <g class="overaxes-below"></g>
+                        <g class="plot" transform="translate(80, 0)" clip-path="url('#clipc7ff52xyplot')">
+                            <g class="waterfalllayer mlayer">
+                                <g class="trace bars" style="opacity: 1;">
+                                    <g class="points">
+                                        <g class="point">
+                                            <path d="M9.86,301V14H88.71V301Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(204, 204, 204); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-inside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$8799520" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(49.2848779296875,29.5)">~$8799520</text>
+                                        </g>
+                                        <g class="point">
+                                            <path d="M108.43,14V148.82H187.29V14Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(194, 223, 255); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-inside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$4100904" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(147.30537353515626,143.32)">~$4100904</text>
+                                        </g>
+                                        <g class="point">
+                                            <path d="M207,146.82V155.26H285.86V146.82Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(194, 223, 255); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-outside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$198900" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(246.430244140625,170.76)">~$198900</text>
+                                        </g>
+                                        <g class="point">
+                                            <path d="M305.57,153.26V155.3H384.43V153.26Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(194, 223, 255); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-outside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$1033" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(345,170.8)">~$1033</text>
+                                        </g>
+                                        <g class="point">
+                                            <path d="M404.14,153.3V155.93H483V153.3Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(194, 223, 255); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-outside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$19440" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(443.570244140625,171.43)">~$19440</text>
+                                        </g>
+                                        <g class="point">
+                                            <path d="M502.71,153.93V157.09H581.57V153.93Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(194, 223, 255); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-outside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$36000" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(542.140244140625,172.59)">~$36000</text>
+                                        </g>
+                                        <g class="point">
+                                            <path d="M601.29,301V155.09H680.14V301Z"
+                                                  style="vector-effect: non-scaling-stroke; fill: rgb(68, 153, 255); fill-opacity: 1; stroke: rgb(68, 68, 68); stroke-opacity: 1; stroke-width: 0px; opacity: 1;">
+                                            </path>
+                                            <text class="bartext bartext-inside" text-anchor="middle"
+                                                  data-notex="1" data-unformatted="~$4662616" data-math="N" x="0" y="0"
+                                                  style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;"
+                                                  transform="translate(640.1603735351562,170.59)">~$4662616</text>
+                                        </g>
+                                    </g>
+                                    <g class="lines">
+                                        <g class="line">
+                                            <path d="M88.71,15H108.43"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                        <g class="line">
+                                            <path d="M187.29,147.82H207"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                        <g class="line">
+                                            <path d="M285.86,154.26H305.57"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                        <g class="line">
+                                            <path d="M384.43,154.3H404.14"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                        <g class="line">
+                                            <path d="M483,154.93H502.71"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                        <g class="line">
+                                            <path d="M581.57,156.09H601.29"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                        <g class="line">
+                                            <path d="M0,0Z"
+                                                  style="fill: none; stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g class="overplot"></g>
+                        <path class="xlines-above crisp" d="M0,0" style="fill: none;"></path>
+                        <path class="ylines-above crisp" d="M0,0" style="fill: none;"></path>
+                        <g class="overlines-above"></g>
+                        <g class="xaxislayer-above">
+
+                        </g>
+                        <g class="yaxislayer-above">
+                            <g class="ytick">
+                                <text text-anchor="end" x="79" y="4.199999999999999" data-unformatted="0"
+                                      data-math="N" transform="translate(0,300)"
+                                      style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;">0</text>
+                            </g>
+                            <g class="ytick">
+                                <text text-anchor="end" x="79" y="4.199999999999999" data-unformatted="2M"
+                                      data-math="N" transform="translate(0,235.22)"
+                                      style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;">2M</text>
+                            </g>
+                            <g class="ytick">
+                                <text text-anchor="end" x="79" y="4.199999999999999" data-unformatted="4M"
+                                      data-math="N" transform="translate(0,170.45)"
+                                      style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;">4M</text>
+                            </g>
+                            <g class="ytick">
+                                <text text-anchor="end" x="79" y="4.199999999999999" data-unformatted="6M"
+                                      data-math="N" transform="translate(0,105.67)"
+                                      style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;">6M</text>
+                            </g>
+                            <g class="ytick">
+                                <text text-anchor="end" x="79" y="4.199999999999999" data-unformatted="8M"
+                                      data-math="N" transform="translate(0,40.89)"
+                                      style="font-family:     Open Sans    , verdana, arial, sans-serif; font-size: 12px; fill: rgb(68, 68, 68); fill-opacity: 1; white-space: pre;">8M</text>
+                            </g>
+                        </g>
+                        <g class="overaxes-above"></g>
+                    </g>
+                </g>
+                <g class="polarlayer"></g>
+                <g class="ternarylayer"></g>
+                <g class="geolayer"></g>
+                <g class="funnelarealayer"></g>
+                <g class="pielayer"></g>
+                <g class="treemaplayer"></g>
+                <g class="sunburstlayer"></g>
+                <g class="glimages"></g>
+            </svg>
+            <div class="gl-container"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="850" height="380">
+                <defs id="topdefs-c7ff52">
+                    <g class="clips"></g>
+                </defs>
+                <g class="indicatorlayer"></g>
+                <g class="layer-above">
+                    <g class="imagelayer"></g>
+                    <g class="shapelayer"></g>
+                </g>
+                <g class="infolayer">
+                    <g class="g-gtitle"></g>
+                    <g class="g-xtitle"></g>
+                    <g class="g-ytitle"></g>
+                </g>
+                <g class="menulayer"></g>
+                <g class="zoomlayer"></g>
+            </svg>
+            <div class="modebar-container" style="position: absolute; top: 0px; right: 0px; width: 100%;"></div><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                                     width="850" height="380">
+                <g class="hoverlayer"></g>
+            </svg>
+        </div>
+        <div class="placeholder">
+            <p>Server Configarations used for this analysis</p>
+            <p>AMD server configuration: 2 xAMD RPYC 7351 ,16 x 32GB DDR4 2666MHz DIMMs</p>
+            <p>Intel server configuration: 2 x Skylake 6130 ,24 x 32GB DDR4 2666MHz DIMMs</p>
+        </div>
+
+    </div>
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page3Part2">
+        <img id="logo" src='logo.png'>
+        <div class="placeholder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam bibendum erat,</p>
+            <p>
+                ut rutrum augue dictum et. Donec posuere urna a ex efficitur auctor.
+                tristique
+            </p>
+            <p>nulla sem pharetra orci, sed aliquam tortor dui sed turpis. Nulla laoreet</p>
+        </div>
+        <p class="tableHeading" id="table1Heading">VIRTUALIZATION SOFTWARE</p>
+        <table class="tables" id="table1">
+            <tr>
+                <th>SELECTED SOFTWARE</th>
+                <th>SUPPORT LEVEL</th>
+                <th>Licensed By</th>
+                <th>VUser Defined - Cost per License</th>
+            </tr>
+            <tr>
+                <td>Citrix</td>
+                <td>Citrix® Hypervisor Standard Edition</td>
+                <td>host</td>
+                <td>1000.02</td>
+            </tr>
+        </table>
+        <p class="tableHeading" id="table2Heading">PROCESSOR DETAILS</p>
+        <table class="tables" id="table2">
+            <tr>
+                <th>Details</th>
+                <th>Sockets/Server</th>
+                <th>Cores/Socket</th>
+                <th>Cores/Server</th>
+                <th>Total Servers/Hosts</th>
+                <th>Total Sockets</th>
+                <th>Total Racks</th>
+            </tr>
+            <tr>
+                <td>Intel Xeon Gold 5120 </td>
+                <td>10</td>
+                <td>1</td>
+                <td>10</td>
+                <td>32</td>
+                <td>320</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>AMD EPYC 7555</td>
+                <td>12</td>
+                <td>2</td>
+                <td>24</td>
+                <td>14</td>
+                <td>168</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p class="tableHeading" id="table4Heading">ACQUISITION COST: Hdwr & Virtualization SW</p>
+        <table class="tables" id="table4">
+            <tr>
+                <th>FACTORS</th>
+                <th>Intel Xeon Gold 5120</th>
+                <th>AMD EPYC 7555</th>
+
+            </tr>
+            <tr>
+                <td>Hardware and Virt SW Cost</td>
+                <td>$8799537.60</td>
+                <td>$4662623.70</td>
+
+            </tr>
+            <tr>
+                <td>AMD Lower Acq Cost</td>
+                <td>$4136913.60</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AMD Lower Acq Cost by:</td>
+                <td>47.01</td>
+                <td></td>
+
+            </tr>
+        </table>
+        <p class="tableHeading" id="table5Heading">Cost per VM</p>
+        <table class="tables" id="table5">
+            <tr>
+                <th>FACTORS</th>
+                <th>Intel Xeon Gold 5120</th>
+                <th>AMD EPYC 7555</th>
+            </tr>
+            <tr>
+                <td>3 Year Cost/VM </td>
+                <td>$29563.00</td>
+                <td>$15950.00</td>
+
+            </tr>
+            <tr>
+                <td>3 Year VM Cost AMD Lower by:</td>
+                <td>$13613.00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1 Year Cost/VM</td>
+                <td>$28187.00</td>
+                <td>$15030.00</td>
+            </tr>
+            <tr>
+                <td>3 Year VM Cost AMD Lower by:</td>
+                <td>$13157.00</td>
+                <td></td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page3Part3">
+        <img id="logo" src='logo.png'>
+        <p class="tableHeading" id="table6Heading">VIRTUALIZATION TCO</p>
+        <table class="tables" id="table6">
+            <tr>
+                <th>FACTORS</th>
+                <th>Intel Xeon Gold 5120</th>
+                <th>AMD EPYC 7555</th>
+
+            </tr>
+            <tr>
+                <td>3 Year Solution TCO Cost </td>
+                <td>$9460314</td>
+                <td>$5104027.00</td>
+
+            </tr>
+            <tr>
+                <td>3 Year TCO Solution AMD Lower by:</td>
+                <td>$4356287.00</td>
+                <td>2</td>
+
+            </tr>
+            <tr>
+                <td>1st Year Solution TCO Cost</td>
+                <td>$9019796.00</td>
+                <td>$4809758</td>
+
+            </tr>
+            <tr>
+                <td>1st Year Solution TCO AMD Lower by:</td>
+                <td>$4210038.00</td>
+                <td></td>
+
+            </tr>
+        </table>
+        <p class="tableHeading" id="table7Heading">Virtualization Licenses</p>
+        <table class="tables" id="table7">
+            <tr>
+                <th>FACTORS</th>
+                <th>Intel Xeon Gold 5120</th>
+                <th>AMD EPYC 7555</th>
+            </tr>
+            <tr>
+                <td>License Count</td>
+                <td>12</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>AMD Lower License Count By</td>
+                <td>18</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total SW License Cost</td>
+                <td>$64017.60</td>
+                <td>$28007.70</td>
+            </tr>
+            <tr>
+                <td>AMD Lower SW Cost</td>
+                <td>$36009.90</td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="placeholder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam bibendum erat,</p>
+            <p>
+                ut rutrum augue dictum et. Donec posuere urna a ex efficitur auctor.
+                tristique
+            </p>
+            <p>nulla sem pharetra orci, sed aliquam tortor dui sed turpis. Nulla laoreet</p>
+        </div>
+    </div>
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page6">
+        <img id="logo" src='logo.png'>
+        <p class="tableHeading" id="table8Heading">MEMORY</p>
+        <table class="tables" id="table8">
+            <tr>
+                <th>FACTORS</th>
+                <th>Intel Xeon </th>
+                <th>AMD EPYC </th>
+            </tr>
+            <tr>
+                <td>DIMMs per Processor Socket</td>
+                <td>12</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>DIMM size in GB: (Calculated)</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Total Memory/ Server: (Calculated)</td>
+                <td>960</td>
+                <td>1536</td>
+            </tr>
+            <tr>
+                <td>Chassis Size</td>
+                <td>2RU</td>
+                <td>1RU</td>
+            </tr>
+            <tr>
+                <td>Chassis Cost</td>
+                <td>2500</td>
+                <td>2200</td>
+            </tr>
+        </table>
+        <p class="tableHeading" id="table9Heading">STORAGE</p>
+        <table class="tables" id="table9">
+            <tr>
+                <th>FACTORS</th>
+                <th>Power</th>
+            </tr>
+            <tr>
+                <td>Amount of Internal Storage per system(TB)</td>
+                <td>1TB</td>
+
+            </tr>
+            <tr>
+                <td>Power Allocation per Rack in kW</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Average cost per GB storage</td>
+                <td>$0.38</td>
+
+            </tr>
+            <tr>
+                <td>PUE (power usage effectiveness)</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>HDD count</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Annual Server Hardware Admin Pay</td>
+                <td>$85,000</td>
+            </tr>
+            <tr>
+                <td>HDD power per drive - 3W</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Salary burden</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Rack Size in RU</td>
+                <td>42</td>
+            </tr>
+        </table>
+        <p class="tableHeading" id="table10Heading">ADMIN DETAILS</p>
+        <table class="tables" id="table10">
+            <tr>
+                <th>Servers Managed / Admin</th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <td>VMs Managed / Admin</td>
+                <td>400</td>
+
+            </tr>
+        </table>
+        <div class="placeholder" id="step2Placeholder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam bibendum erat,</p>
+            <p>
+                ut rutrum augue dictum et. Donec posuere urna a ex efficitur auctor.
+                tristique
+            </p>
+            <p>nulla sem pharetra orci, sed aliquam tortor dui sed turpis. Nulla laoreet</p>
+        </div>
+    </div>
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page7">
+        <div style="page-break-after:always"></div>
+        <img id="logo" src='logo.png'>
+        <p class="tableHeading" id="table11Heading">VIRTUALIZATION PARAMETERS</p>
+        <table class="tables" id="table11">
+            <tr>
+                <th>FACTORS</th>
+                <th>INPUTS</th>
+            </tr>
+            <tr>
+                <td>Total VMs: Default 320</td>
+                <td>320</td>
+            </tr>
+            <tr>
+                <td>Cores/ VM: Default 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Mem(GB)/VM: Default 8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Virtualization License Cost</td>
+                <td>5000</td>
+            </tr>
+        </table>
+        <p class="tableHeading" id="table12Heading">DATA CENTER SPACE & POWER COST</p>
+        <table class="tables" id="table12">
+            <tr>
+                <th>FACTORS</th>
+                <th>INPUTS</th>
+            </tr>
+            <tr>
+                <td>
+                    Space Cost per square foot
+                    per month (in USD$): Default $20
+                </td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Power Cost/ kWh (in USD$): Default $0.12</td>
+                <td>$0.12</td>
+            </tr>
+        </table>
+        <div class="placeholder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam bibendum erat,</p>
+            <p>
+                ut rutrum augue dictum et. Donec posuere urna a ex efficitur auctor.
+                tristique
+            </p>
+            <p>nulla sem pharetra orci, sed aliquam tortor dui sed turpis. Nulla laoreet</p>
+        </div>
+
+    </div>
+    <div style="page-break-after:always"></div>
+    <div class="pages" id="page8">
+        <img id="logo" src='logo.png'>
+        <p id="aboutAMD">About AMD</p>
+        <div class="disclaimer">
+            For more than 45 Years AMD has driven innovation in high-performance computing,graphics, and visualization
+            technologies
+            - the building blocks for gaming,immersive platforms and the datacenter. Hundreds of millions of
+            consumers,leading
+            Fortune 500 businesses and cutting-edge scientific research facilities around the world rely on AMD
+            technology
+            daily to improve how they live, work, and play.AMD employees arlound the world are focussed on building
+            great products
+            that push the bundaries of what is possible.For more information about how AMD is enabling today and
+            inspiring
+            tommorow,visit the AMD (NASDAQ:AMD) <a href="">website</a> ,<a href="">blog</a> ,<a href="">Facebook</a> and
+            <a href="">Twitter</a> pages.
+            <br><br>
+            © 2019 Advanced Micro Devices, Inc. All rights reserved. AMD, EPYC, the AMD Arrow logo, and combinations
+            thereof, are trademarks of Advanced Micro Devices, Inc. Other names are for informational purposes only and
+            may be trademarks of their respective owners.
+        </div>
+    </div>
+
+
+</body>
+
+</html>
