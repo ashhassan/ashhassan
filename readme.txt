@@ -16,3 +16,5 @@ How to use
 var pdfBytes = (new NReco.PdfGenerator.HtmlToPdfConverter()).GeneratePdf(htmlContent);
 
 More examples are available for commercial users: http://www.nrecosite.com/pdf_generator_net.aspx
+
+This is a change in Read Me file
